@@ -17,7 +17,7 @@
     //SAÍDA
 
     document.write(`lista par crescente: ${listaPar.sort()}<br>
-                    lista par decrescente: ${listaPar.reverse()}<br>
-                    lista impar crescente: ${listaPar.sort()}<br>
-                    lista impar decrescente: ${listaPar.reverse()}<br>`)
+                    lista par decrescente: ${listaPar.sort((a,b) => b - a)}<br>
+                    lista impar crescente: ${listaImpar.sort()}<br>
+                    lista impar decrescente: ${listaImpar.reverse((a,b)=> b-a)}<br>`)
 </script>
