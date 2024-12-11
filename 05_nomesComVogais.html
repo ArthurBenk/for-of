@@ -9,12 +9,13 @@
     let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"];
     let nomesVogal = []
     //PROCESSAMENTO
-    for(let inicial of listaDeNomes[0]){
-        if (inicial.search("A") != -1||inicial.search("E") != -1||inicial.search("I") != -1||inicial.search("O") != -1||inicial.search("U") != -1||) {
-            inicial.push(nomeVogal)            
+    for(let item of listaDeNomes){
+        let inicial=item[0]
+        if (inicial=="A"||inicial=="E"||inicial=="I"||inicial=="O"||inicial=="U") {
+            nomesVogal.push(inicial)            
         };
     }
-    let ordenado = listaDeNomes.sort
+    let ordenado = listaDeNomes.sort()
     //SAÍDA
     document.write(`${nomesVogal}<br>${ordenado}`)
 </script>
